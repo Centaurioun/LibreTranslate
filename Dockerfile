@@ -1,4 +1,4 @@
-FROM python:3.8.14-slim-bullseye as builder
+FROM python:slim as builder
 
 WORKDIR /app
 
@@ -19,7 +19,7 @@ RUN ./venv/bin/pip install . \
   && ./venv/bin/pip cache purge
 
 
-FROM python:3.8.14-slim-bullseye
+FROM python:slim
 
 ARG with_models=false
 ARG models=
