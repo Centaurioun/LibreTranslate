@@ -121,3 +121,4 @@ pull_request_rules:
         commit_message_template: null
         merge_bot_account: null
         method: merge
+        
